@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anderson Benjamim de Campos</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -32,16 +32,23 @@
 
     <section class="hero">
       <div class="hero-content">
+        
         <div class="hero-text">
           <h1>Anderson Benjamim de Campos</h1>
           <p>
-            Desenvolvedor back-end com foco em Java e Spring Boot. Crio soluções
-            eficientes e escaláveis para empresas modernas.
+            Estudante de Análise e Desenvolvimento de Sistemas com perfil
+            analítico e comunicativo, possui experiência prática em implantação
+            de sistemas, treinamentos, mapeamento de processos e desenvolvimento
+            de software. Domina Java, bancos de dados e boas práticas de
+            engenharia de software, com facilidade para entender as necessidades
+            dos clientes e proporcionar uma boa experiência com soluções
+            tecnológicas.
           </p>
           <a href="#contact" class="btn">Vamos começar</a>
+          <a href="curriculo-anderson.pdf" class="btn download-btn" download>Baixar Currículo</a>
         </div>
         <div class="hero-image">
-          <img src="anderson&dani-40.jpg" alt="Foto do Anderson" />
+          <img src="img/anderson&dani-40.jpg" alt="Foto do Anderson" />
         </div>
       </div>
     </section>
@@ -49,13 +56,15 @@
     <section class="projects" id="projects">
       <h2>Projetos</h2>
       <div class="project-card">
-        <h3>Sistema de Cadastro de Clientes</h3>
+        <h3>Blog Semântico</h3>
         <p>
-          Aplicação Java com Java Swing para gerenciar clientes, com intenção de
-          migrar para Spring Boot e banco de dados.
+          O site <strong>Blog Semântico</strong> é um blog estático com design
+          moderno e responsivo, que simula posts sobre aventuras e paisagens
+          naturais, ideal como modelo para portfólios ou demonstrações de
+          layout.
         </p>
         <a
-          href="https://github.com/Anderson-Campos/Sistema-Cadastro-Clientes"
+          href="https://blog-semantico-two.vercel.app/"
           class="project-btn"
           target="_blank"
           >Ver Projeto</a
@@ -63,13 +72,15 @@
       </div>
 
       <div class="project-card">
-        <h3>Dashboard Interativo</h3>
+        <h3>Login React</h3>
         <p>
-          Dashboard com HTML, CSS e JS puro, com gráficos e dados simulados,
-          ideal para exibição em portfólios.
+          O site <strong>Login React</strong> é uma interface moderna de login
+          desenvolvida com React. Ele simula uma tela de autenticação com visual
+          atrativo, ideal para demonstrar design e interatividade em aplicações
+          front-end.
         </p>
         <a
-          href="https://github.com/Anderson-Campos/Dashboard-Interativo"
+          href="https://login-react-neon.vercel.app/"
           class="project-btn"
           target="_blank"
           >Ver Projeto</a
@@ -77,13 +88,14 @@
       </div>
 
       <div class="project-card">
-        <h3>PetCar Mobile</h3>
+        <h3>Gerador de Senha</h3>
         <p>
-          Aplicativo para clínica veterinária desenvolvido em React Native com
-          foco em agendamentos e notificações.
+          O site <strong>Gerador de Senha</strong> é uma ferramenta simples para
+          gerar senhas aleatórias, com interface minimalista, personalização de
+          comprimento e opção de copiar com um clique.
         </p>
         <a
-          href="https://github.com/Anderson-Campos/PetCar-Mobile"
+          href="https://gerador-de-senhas-midx.vercel.app/"
           class="project-btn"
           target="_blank"
           >Ver Projeto</a
@@ -120,7 +132,11 @@
         method="POST"
       >
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="http://127.0.0.1:5500/tks.html">
+        <input
+          type="hidden"
+          name="_next"
+          value="http://127.0.0.1:5500/tks.html"
+        />
 
         <input type="text" name="name" placeholder="Seu nome" required />
         <input type="email" name="email" placeholder="Seu e-mail" required />

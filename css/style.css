@@ -74,6 +74,24 @@ body {
   margin-bottom: 2rem;
 }
 
+.print-resume-btn {
+  background-color: #1e293b;
+  color: #fff;
+  border: 2px solid #22c55e;
+  padding: 0.8rem 1.4rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.print-resume-btn:hover {
+  background-color: #22c55e;
+  color: #0f172a;
+}
+
 .btn {
   display: inline-block;
   background: #22c55e;
@@ -300,4 +318,113 @@ body {
 
 .project-btn:hover {
   background-color: #007e33;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar ul {
+    gap: 1rem;
+  }
+
+  .projects {
+    margin: 0 20px;
+    justify-content: center;
+  }
+
+  .project-card {
+    width: 45%;
+  }
+
+  .hero-image img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .btn,
+  .print-resume-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .projects {
+    padding: 40px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  .brands span {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .skills span {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .whatsapp-float img {
+    width: 24px;
+    height: 24px;
+  }
 }
